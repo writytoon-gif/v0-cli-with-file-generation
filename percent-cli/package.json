@@ -1,0 +1,29 @@
+{
+  "name": "percent-cli",
+  "version": "0.1.0",
+  "description": "percent - a Claude-style terminal chat CLI with file/code generation powered by OpenRouter",
+  "type": "module",
+  "bin": {
+    "percent": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "percent": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["cli", "ai", "chat", "openrouter", "streaming", "codegen"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "eventsource-parser": "^1.1.2",
+    "ora": "^8.0.1",
+    "prompts": "^2.4.2",
+    "undici": "^6.19.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "typescript": "^5.6.2"
+  }
+}
